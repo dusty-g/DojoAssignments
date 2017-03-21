@@ -1,0 +1,13 @@
+mkdir gittest
+cd gittest
+touch index.html styles.css aboutMe.txt
+git init
+git add aboutMe.txt index.html styles.css
+git commit -m "added files"
+git add aboutMe.txt
+git commit -m "added favorite movie"
+git log
+git revert -n 810284ff505cf78b
+git commit -m "revert 810284ff505cf78b"
+git add aboutMe.txt
+git commit -m "added favorite movie:
