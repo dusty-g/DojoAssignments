@@ -1,0 +1,8 @@
+cd DojoAssignments
+git init
+git add *
+git commit -m "added files"
+git remote add origin https://github.com/dusty-g/DojoAssignments.git
+git push -u origin master
+git add readme.md
+git commit -m "added readme.md"
