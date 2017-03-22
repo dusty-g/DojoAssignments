@@ -5,7 +5,7 @@
  height: 900px;
  width: 900px;
  padding: 20px;
- background-color: yellow;
+ background: linear-gradient(to right, rebeccapurple, white, rebeccapurple);
  
 }
 

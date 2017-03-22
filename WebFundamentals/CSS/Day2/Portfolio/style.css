@@ -1,0 +1,127 @@
+/**{
+    margin: 12px;
+    padding: 0px;
+}*/
+
+#banner{
+    height: 64px;
+    width: 970px;
+    background-color: white;
+    margin-bottom: 6px;
+}
+#banner h1{
+    margin: 7px 0px 0px 20px;
+    font-family: fantasy;
+    display: inline-block;
+    
+}
+#banner h2{
+    display: inline;
+    /* width: 707px; */
+    font-family: Verdana;
+    /* text-align: right; */
+    margin-left: 284px;
+    
+}
+#jayne img{
+    width: 400px;
+    height: 252px;
+    border: 7px solid lightgrey;
+    margin: 12px;
+}
+
+#wrapper{
+    background: linear-gradient(to right, purple, mediumpurple, purple);
+    width: 970px;
+    
+}
+#about h3{
+    background: linear-gradient(to top, darkgray, dimgray, darkgray);
+    margin-top: 0px;
+    /*vertical-align: top;*/
+    color: white;
+    height: 34px;
+    padding: 14px 0px 0px 20px;
+    
+}
+#about {
+    width: 504px;
+    height: 264px;
+    display: inline-block;
+    vertical-align: top;
+    background: linear-gradient(to right, white, lavender);
+    margin: 12px;
+
+}
+
+#about a{
+    margin: 5px;
+}
+.boxes img{
+    width: 290px;
+    height: 150px;
+}
+
+.icons img{
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+}
+.boxes{
+    width : 296px;
+    height: 552px;
+    display: inline-block;
+    background-color: lavender;
+    vertical-align: bottom;
+    margin: 12px;
+}
+.boxes h3{
+    background: linear-gradient(to top, darkgray, dimgray, darkgray);
+     margin-top: 0px;
+     margin-bottom: 0px;
+    /*vertical-align: top;*/
+    color: white;
+    padding: 10px 0px 10px 20px;
+}
+.boxes h4{
+    background: linear-gradient(to top, darkgray, dimgray, darkgray);
+     margin-top: 0px;
+    /*vertical-align: top;*/
+    color: white;
+    height: 29px;
+    padding: 12px 0px 0px 20px;
+}
+#footer img{
+    width: 20px;
+    height: 20px;
+}
+#footer{
+    height: 70px;
+    background-color: white;
+    text-align: center;
+}
+#box1 .technologies{
+    margin-top: 60px;
+}
+
+#box2 .technologies{
+    margin-top: 42px;
+}
+.technologies h4{
+    margin-bottom: 0px;
+}
+button{
+    background-color: cadetblue;
+    color: white;
+    border: 1px solid black;
+    margin-left: 110px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px grey;
+}
+p{
+    margin: 5px;
+}
+
+#box1 h4{
+    margin-top: 10px;
+}
