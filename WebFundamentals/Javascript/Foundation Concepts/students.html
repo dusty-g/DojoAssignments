@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            "use strict";
+            function studentNames(array){
+                for (var i in array){
+                    console.log(array[i].first_name, array[i].last_name);
+                }
+            }
+
+            function studentsAndInstructors(object){
+                for (var i in object){
+                    console.log(i);
+                    var count = 1;
+                    
+                    for (var j in object[i]){
+                        
+                        var nameLength = 0;
+                        nameLength = object[i][j].first_name.length + object[i][j].last_name.length;
+                        console.log(count + " - " + object[i][j].first_name, object[i][j].last_name + " - " + nameLength);
+                        count++;
+                    }
+                }
+            }
+            
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

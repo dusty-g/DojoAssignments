@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            "use strict";
+            function numbersOnly(array){
+                var newArray = [];
+                for (var i in array){
+                    if (typeof array[i] === "number"){
+                        newArray.push(array[i]);
+                    }
+                }
+                return newArray;
+            }
+            function deleteAndShift(array, index){
+                for (var i = index; i < array.length-1; i++){
+                    array[i] = array [i + 1];
+                }
+                array.pop();
+            }
+            function deleteNonNumbers(array){
+                var index = 0;
+                var count = 0;
+                var initialLength = array.length;
+                while (count < initialLength){
+                    if (typeof array[index] === "number"){
+                        index ++;
+                        count ++;
+                    }
+                    else {
+                        deleteAndShift(array, index);
+                        count ++;
+
+                    }
+                }
+            }
+
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

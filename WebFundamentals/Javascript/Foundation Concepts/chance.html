@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            "use strict";
+            function slotMachine(quarters){
+                
+                while (quarters > 0){
+                    quarters --;
+                    if (Math.random()< 0.01){
+                        console.log("Winner!");
+                        var winAmount = Math.floor(Math.random()*50)+50;
+                        console.log("You win " + winAmount+ " quarters");
+                        console.log("Your new quarter count is: ...");
+                        quarters += winAmount;
+                        return quarters
+
+                    }
+                }
+                return 0;
+            }
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

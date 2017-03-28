@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            function printRange(start, end=0, skip=1){
+                if (end == 0){
+                    printRange(0, start, skip);
+                }
+                
+                for (var i = start; i < end; i += skip){
+                    console.log(i);
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

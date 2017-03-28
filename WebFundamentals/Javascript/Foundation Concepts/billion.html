@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+            var reward = 0.01;
+            
+            for(var i = 1; i < 30; i++){
+                reward *= 2;
+            }
+            console.log("Reward after 30 days: " +reward);
+
+            var count = 1;
+            while (reward < Infinity){
+                reward *= 2;
+                count++;
+            }
+            console.log("days until Infinity "+count);
+        
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
