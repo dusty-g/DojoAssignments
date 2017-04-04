@@ -6,15 +6,33 @@ $(document).ready(function(){
     var end = ".png'>";
     var divHTML1 = "<div class='row' id='row-";
     var divHTML2 = "'></div>"
-    
+    var pokeurl1 = "http://pokeapi.co/api/v2/pokemon/";
     //fifteen rows with 10 elements in each row
     //add the last 151st pokemon manually
     //
     //make sure to change i<2 to i<16 
+    var count = 0;
     for(var i = 1; i<16; i++){
-        $(".container").append(divHTML1+row+divHTML2);
+        
         for(var j = 0; j<10; j++){
-            $("#row-"+row).append(temp1+pokedex+temp2+pokedex+end);
+            console.log("count at beginning of loop:  " + count);
+            $.get(pokeurl1+pokedex+"/", function(data){
+                console.log("loop # (inside the $get): " + count);
+                console.log("pokemon # is: "+data.id);
+                console.log("pokedex counter: "+pokedex);
+                console.log("pokemon height is: "+data.height*10);
+                
+                $("#row-"+1).append(temp1+data.id+temp2+data.id+end);
+                
+                $("#"+data.id).css("height", ""+data.height*10);
+                $("#"+data.id).css("width", ""+data.height*10);
+                
+            }, "json");
+            
+            
+            console.log("count at end of loop: "+count);
+            count++;
+
             pokedex++;
         }
         row++;
@@ -23,14 +41,14 @@ $(document).ready(function(){
         // $("h1").next().append(temp+i+".png'>");
         // console.log(temp+i);
     }
-    console.log(pokedex);
-    $(".container").append(divHTML1+row+divHTML2);
-    $("#row-"+row).append(temp1+pokedex+temp2+pokedex+end);
+    
+    // $(".container").append(divHTML1+row+divHTML2);
+    // $("#row-"+row).append(temp1+pokedex+temp2+pokedex+end);
     
     
     $(".container").on("click", "img", function(){
         var id = $(this).attr("id");
-        var pokeurl1 = "http://pokeapi.co/api/v2/pokemon/"
+        var pokeurl1 = "http://pokeapi.co/api/v2/pokemon/";
         
         $.get(pokeurl1+id+"/", function(data){
             console.log(data);
